@@ -1,6 +1,7 @@
 import { profile, socialLinks } from '../data/profile';
 import ExpandableContent from './ExpandableContent';
 import { SiXiaohongshu } from 'react-icons/si';
+import { assetUrl } from '../utils/assets';
 
 const FALLBACK_IMG =
   "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22380%22 fill=%22%23e8e8e8%22%3E%3Crect width=%22300%22 height=%22380%22 rx=%2216%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2240%22 fill=%22%23999%22%3E%F0%9F%90%95%3C/text%3E%3C/svg%3E";
@@ -41,7 +42,7 @@ export default function Hero() {
             {socialLinks.length > 0 && (
               <div className="hero-links">
                 {socialLinks.map((link) => (
-                  <a key={link.title} href={link.url} title={link.title} target="_blank" rel="noopener noreferrer">
+                  <a key={link.title} href={assetUrl(link.url)} title={link.title} target="_blank" rel="noopener noreferrer">
                     {link.reactIcon === 'xiaohongshu' ? (
                       <SiXiaohongshu size={22} />
                     ) : (
@@ -55,7 +56,7 @@ export default function Hero() {
 
           <div className="hero-portrait">
             <img
-              src={profile.portrait}
+              src={assetUrl(profile.portrait)}
               alt={profile.portraitAlt}
               onError={(e) => {
                 e.target.src = FALLBACK_IMG;

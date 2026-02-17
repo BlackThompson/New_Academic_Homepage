@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { publications, publicationFilters } from '../data/publications';
+import { assetUrl } from '../utils/assets';
 
 function AuthorList({ authors }) {
   return (
@@ -29,7 +30,7 @@ function PubItem({ item }) {
       {item.image && (
         <div className="pub-thumb">
           <img
-            src={item.image}
+            src={assetUrl(item.image)}
             alt={item.title}
             onError={(e) => { e.target.src = PAPER_FALLBACK; }}
           />
