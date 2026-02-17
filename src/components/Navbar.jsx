@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
-  { label: 'About', hash: '#about-me', path: '/' },
-  { label: 'Publications', hash: '#main-content', path: '/publications' },
-  { label: 'Fun', hash: '', path: '/fun' },
+  { label: 'About', path: '/' },
+  { label: 'Publications', path: '/publications' },
+  { label: 'Fun', path: '/fun' },
 ];
 
 export default function Navbar() {
@@ -17,17 +17,6 @@ export default function Navbar() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  const handleNavClick = (item) => {
-    setMenuOpen(false);
-
-    if (location.pathname === '/' && item.hash) {
-      const el = document.querySelector(item.hash);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
 
   return (
     <nav className={`top-nav${scrolled ? ' scrolled' : ''}`}>
@@ -45,34 +34,17 @@ export default function Navbar() {
         </button>
 
         <ul className={`nav-links${menuOpen ? ' open' : ''}`}>
-          {navItems.map((item) => {
-            const isPage = item.path !== '/';
-            return (
-              <li key={item.label}>
-                {isPage ? (
-                  <Link
-                    to={item.path}
-                    className={location.pathname === item.path ? 'active' : ''}
-                    onClick={() => handleNavClick(item)}
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  <a
-                    href={location.pathname === '/' ? item.hash : `/${item.hash}`}
-                    onClick={(e) => {
-                      if (location.pathname === '/') {
-                        e.preventDefault();
-                        handleNavClick(item);
-                      }
-                    }}
-                  >
-                    {item.label}
-                  </a>
-                )}
-              </li>
-            );
-          })}
+          {navItems.map((item) => (
+            <li key={item.label}>
+              <Link
+                to={item.path}
+                className={location.pathname === item.path ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
