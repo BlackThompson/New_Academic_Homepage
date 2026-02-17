@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { publications, publicationFilters } from '../data/publications';
 import { assetUrl } from '../utils/assets';
+import LazyImage from './LazyImage';
 
 function AuthorList({ authors }) {
   return (
@@ -29,7 +30,7 @@ function PubItem({ item }) {
     <div className="pub-item" data-tags={item.tags.join(' ')}>
       {item.image && (
         <div className="pub-thumb">
-          <img
+          <LazyImage
             src={assetUrl(item.image)}
             alt={item.title}
             onError={(e) => { e.target.src = PAPER_FALLBACK; }}

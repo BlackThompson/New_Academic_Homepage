@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { assetUrl } from '../../utils/assets';
+import LazyImage from '../LazyImage';
 
 const FALLBACK =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' fill='%23f3f4f6'%3E%3Crect width='400' height='300' rx='12'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.35em' font-size='40' fill='%23d1d5db'%3E%F0%9F%93%B7%3C/text%3E%3C/svg%3E";
@@ -25,10 +26,9 @@ export default function PhotoGallery({ images }) {
             className="gallery-item"
             onClick={() => setLightbox(i)}
           >
-            <img
+            <LazyImage
               src={assetUrl(img.src)}
               alt={img.alt || ''}
-              loading="lazy"
               onError={(e) => { e.target.src = FALLBACK; }}
             />
             {img.caption && (
