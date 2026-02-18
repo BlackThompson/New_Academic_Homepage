@@ -5,6 +5,12 @@ export default function FurrySection() {
   return (
     <div className="fun-section">
       {furryData.intro && <p className="fun-intro">{furryData.intro}</p>}
+      {furryData.warning && (
+        <div className="fun-warning">
+          <i className="fas fa-exclamation-triangle" />
+          <p>{furryData.warning}</p>
+        </div>
+      )}
       {furryData.sections.map((section, i) => (
         <div key={i} className="fun-subsection">
           <h3 className="fun-subsection-title">{section.title}</h3>
