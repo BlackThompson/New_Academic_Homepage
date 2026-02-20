@@ -20,9 +20,34 @@ export const publicationFilters = [
 ];
 
 export const publications = [
+  //   MagHeart: Exploring Playful Avatar Co-Creation and Shared Heartbeats for Icebreaking in Hybrid Meetings
+  // Authors
+  // Black Sun Department of Computer Science, Aarhus University, Aarhus, Denmark
+  // Haiyang Xu Aarhus University, Aarhus, Denmark
+  // Ge Kacy Fu Aarhus University, Department of Computer Science, Aarhus, Denmark
+  // Liyue Da Aarhus University, Aarhus, Denmark, liyueda@cs.au.dk
+  // Eve Hoggan Computer Science, Aarhus University, Aarhus, Denmark
+
   {
     year: 2026,
     items: [
+      {
+        id: 'chi26-magheart',
+        venue: 'To appear in CHI 2026 - Full Paper',
+        title: 'MagHeart: Explorable Playful Avatar Co-Creation and Shared Heartbeats for Icebreaking in Hybrid Meetings',
+        authors: [
+          { name: 'Black Sun*', self: true },
+          'Haiyang Xu*',
+          'Ge Kacy Fu',
+          'Liyue Da',
+          'Eve Hoggan',
+        ],
+        journal: 'Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA \'26).',
+        tags: ['cscw'],
+        award: null,
+        links: [],
+        image: '/images/papers/chi26-magheart.jpg',
+      },
       {
         id: 'chi26-aging-influencers',
         venue: 'To appear in CHI 2026 - Full Paper',
