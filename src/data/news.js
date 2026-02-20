@@ -9,7 +9,7 @@ export const news = [
   {
     id: 'news-2026-03',
     date: '2026 Feb',
-    text: 'One poster is accepted by <strong>CHI 2026</strong>! My first CHI Poster! Many thanks to my co-author and supervisor!',
+    text: 'One poster is accepted by <strong>CHI 2026</strong>! My first CHI Poster! Many thanks to my co-authors and supervisor!',
     featured: true,
   },
   {
