@@ -45,7 +45,11 @@ export const publications = [
         journal: 'Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA \'26).',
         tags: ['cscw'],
         award: null,
-        links: [],
+        links: [{
+          label: 'Video',
+          url: 'https://youtu.be/MW8qub1laFM',
+          icon: 'fas fa-video',
+        }],
         image: '/images/papers/chi26-magheart.jpg',
       },
       {
