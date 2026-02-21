@@ -29,6 +29,7 @@ export const furryData = {
       title: 'Fursona & Commissions',
       description: 'Art commissions of my fursona.',
       images: [
+        { src: '/images/fun/furry/commission/commission-8.jpg', alt: 'Fursona commission', caption: 'By artist name' },
         { src: '/images/fun/furry/commission/commission-7.png', alt: 'Fursona commission', caption: 'By artist name' },
         { src: '/images/fun/furry/commission/commission-1.png', alt: 'Fursona commission', caption: 'By artist name' },
         { src: '/images/fun/furry/commission/commission-2.png', alt: 'Fursona commission', caption: 'By artist name' },
