@@ -47,7 +47,6 @@ export const socialLinks = [
   { icon: 'ai ai-google-scholar ai-lg', url: 'https://scholar.google.com/citations?user=Hrhrkc4AAAAJ&hl=en', title: 'Google Scholar' },
   { icon: 'fab fa-github fa-lg', url: 'https://github.com/BlackThompson', title: 'GitHub' },
   { icon: 'fab fa-linkedin fa-lg', url: 'https://www.linkedin.com/in/black-sun', title: 'LinkedIn' },
-  { icon: 'fab fa-x-twitter fa-lg', url: 'https://x.com/Black_HCI', title: 'Twitter/X' },
   { reactIcon: 'xiaohongshu', url: 'https://www.xiaohongshu.com/user/profile/5f2a41cf000000000101d44b', title: 'RedNote' },
   { icon: 'fas fa-file-alt fa-lg', url: '/doc/Concise_CV_Black_Sun.pdf', title: 'CV' },
 ];
