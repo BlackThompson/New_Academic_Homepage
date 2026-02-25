@@ -8,7 +8,7 @@ export const awards = [
     id: 'award-sigchi-2026',
     year: '2026',
     text: 'SIGCHI — Gary Marsden Travel Award',
-    // url: '#',
+    url: 'https://sigchi.org/resources/gary-marsden-travel-awards/recipients',
   },
   {
     id: 'award-travel-2025',
