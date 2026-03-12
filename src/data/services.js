@@ -18,6 +18,7 @@ export const services = [
       'ACM CHI | 2026 Poster',
       'ACM CSCW | 2025 Poster',
       'ACM DIS | 2026',
+      'ACM CUI | 2026',
       'ACM CHI PLAY | 2026',
       'ACM Interactive Health | 2026',
       'ICHEC (ChineseCHI) | 2025',
