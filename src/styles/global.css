@@ -41,7 +41,7 @@
   --radius-lg: 16px;
   --radius-xl: 24px;
 
-  --max-width: 1080px;
+  --max-width: 1200px;
   --nav-height: 64px;
 
   --transition: 0.3s ease;
@@ -244,6 +244,7 @@ img {
   margin-top: 14px;
   text-align: center;
   line-height: 1.5;
+  white-space: pre-line;
 }
 
 .hero-location {
@@ -309,15 +310,16 @@ img {
 
 .hero-portrait {
   flex-shrink: 0;
-  width: 300px;
+  width: 360px;
 }
 
 .hero-portrait .lazy-img-wrapper {
-  width: 100%;
+  width: 300px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   box-shadow: var(--shadow-lg);
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .hero-portrait img {
@@ -394,8 +396,8 @@ img {
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--color-text);
   margin-bottom: 32px;
   letter-spacing: -0.02em;
@@ -442,7 +444,7 @@ img {
 
 .sidebar-column {
   flex-shrink: 0;
-  width: 300px;
+  width: 360px;
   position: sticky;
   top: calc(var(--nav-height) + 24px);
 }
@@ -462,8 +464,8 @@ img {
 
 .sidebar-title {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--color-text);
   margin-bottom: 16px;
   padding-bottom: 8px;
@@ -552,6 +554,19 @@ img {
   background: var(--color-primary);
 }
 
+.sidebar-service-note {
+  font-size: 0.72rem;
+  color: #d4770c;
+  margin: 0 0 6px;
+}
+
+.service-star {
+  color: #d4770c;
+  font-weight: 700;
+  font-size: 0.65rem;
+  margin-left: 1px;
+}
+
 /* --- Sidebar Awards --- */
 .sidebar-awards-list {
   list-style: none;
@@ -596,7 +611,7 @@ img {
    PUBLICATIONS
    =========================== */
 .publications-content .section-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 20px;
 }
 
@@ -646,8 +661,8 @@ img {
 
 .pub-year {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: var(--color-text);
   margin-bottom: 12px;
   padding-bottom: 6px;

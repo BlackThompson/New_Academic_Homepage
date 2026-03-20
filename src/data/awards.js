@@ -5,6 +5,12 @@
 
 export const awards = [
   {
+    id: 'award-travel-2026',
+    year: '2026',
+    text: 'Student Travel Fund, Aarhus University',
+    // url: 'https://studerende.au.dk/studier/fagportaler/datalogi/studieliv-og-faciliteter/studenterrejsepuljen',
+  },
+  {
     id: 'award-sigchi-2026',
     year: '2026',
     text: 'SIGCHI — Gary Marsden Travel Award',

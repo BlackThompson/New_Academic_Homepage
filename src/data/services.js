@@ -1,6 +1,8 @@
 /**
  * Academic service entries.
- * Each category has a title and a list of items.
+ * Each category has a title, optional note, and a list of items.
+ * Items have a conference name and an array of years.
+ * Each year can be a string or { year, award: true } to mark outstanding review.
  */
 
 export const services = [
@@ -8,21 +10,22 @@ export const services = [
     id: 'sv-volunteer',
     title: 'Student Volunteer',
     items: [
-      'ACM UbiComp | 2025',
+      { conf: 'ACM UbiComp', years: ['2025'] },
     ],
   },
   {
     id: 'sv-reviewer',
     title: 'Conference Reviewer',
+    note: '★ Special Recognition for Outstanding Reviews',
     items: [
-      'ACM CHI | 2026 Poster',
-      'ACM CSCW | 2025 Poster',
-      'ACM DIS | 2026',
-      'ACM CUI | 2026',
-      'ACM CHI PLAY | 2026',
-      'ACM Interactive Health | 2026',
-      'ICHEC (ChineseCHI) | 2025',
-      'IEEE IJCNN | 2024',
+      { conf: 'ACM CHI Poster', years: [{ year: '2026', award: true }] },
+      { conf: 'ACM CSCW Poster', years: ['2025'] },
+      { conf: 'ACM DIS', years: ['2026'] },
+      { conf: 'ACM CUI', years: ['2026'] },
+      { conf: 'ACM CHI PLAY', years: ['2026'] },
+      { conf: 'ACM Interactive Health', years: ['2026'] },
+      { conf: 'ICHEC (ChineseCHI)', years: ['2025'] },
+      { conf: 'IEEE IJCNN', years: ['2024'] },
     ],
   },
 ];

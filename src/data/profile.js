@@ -7,7 +7,7 @@ export const profile = {
   name: 'Black Sun',
   pronouns: 'They/Them',
   tagline:
-    'If technology doesn\'t work for the most vulnerable, it doesn\'t work at all.',
+    'If technology doesn\'t work for the most vulnerable,\nit doesn\'t work at all.',
   location: 'Aarhus, Denmark',
   locationIcon: 'fas fa-map-marker-alt',
   badge: 'Dog Lover',
