@@ -1623,8 +1623,12 @@ img {
   }
 
   .hero-portrait {
-    width: 180px;
+    width: 200px;
     margin: 0 auto;
+  }
+
+  .hero-portrait .lazy-img-wrapper {
+    width: 100%;
   }
 
   .hero-name {
@@ -1764,7 +1768,11 @@ img {
   }
 
   .hero-portrait {
-    width: 150px;
+    width: 160px;
+  }
+
+  .hero-portrait .lazy-img-wrapper {
+    width: 100%;
   }
 
   .section {
