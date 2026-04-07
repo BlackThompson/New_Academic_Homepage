@@ -22,7 +22,7 @@ export const services = [
       { conf: 'ACM CSCW Poster', years: ['2025'] },
       { conf: 'ACM DIS', years: ['2026'] },
       { conf: 'ACM CUI', years: ['2026'] },
-      { conf: 'ACM CHI PLAY', years: ['2026'] },
+      { conf: 'ACM CHI PLAY', years: [{ year: '2026', award: true }] },
       { conf: 'ACM Interactive Health', years: ['2026'] },
       { conf: 'ICHEC (ChineseCHI)', years: ['2025'] },
       { conf: 'IEEE IJCNN', years: ['2024'] },
