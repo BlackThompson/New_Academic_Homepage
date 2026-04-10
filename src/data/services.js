@@ -13,13 +13,13 @@ export const services = [
       { conf: 'ACM UbiComp', years: ['2025'] },
     ],
   },
-  {
-    id: 'sv-pc',
-    title: 'Program Committee',
-    items: [
-      { conf: 'ACM CUI', years: ['2026'] },
-    ],
-  },
+  // {
+  //   id: 'sv-pc',
+  //   title: 'Program Committee',
+  //   items: [
+  //     { conf: 'ACM CUI', years: ['2026'] },
+  //   ],
+  // },
   {
     id: 'sv-reviewer',
     title: 'Reviewer',
