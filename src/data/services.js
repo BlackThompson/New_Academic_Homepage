@@ -14,8 +14,15 @@ export const services = [
     ],
   },
   {
+    id: 'sv-pc',
+    title: 'Program Committee',
+    items: [
+      { conf: 'ACM CUI', years: ['2026'] },
+    ],
+  },
+  {
     id: 'sv-reviewer',
-    title: 'Conference Reviewer',
+    title: 'Reviewer',
     note: '★ Special Recognition for Outstanding Reviews',
     items: [
       { conf: 'ACM CHI Poster', years: [{ year: '2026', award: true }] },
