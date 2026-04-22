@@ -49,6 +49,10 @@ export const publications = [
           label: 'Video',
           url: 'https://youtu.be/MW8qub1laFM',
           icon: 'fas fa-video',
+        }, {
+          label: 'Paper',
+          url: 'https://dl.acm.org/doi/full/10.1145/3772363.3798371',
+          icon: 'fas fa-link',
         }],
         image: '/images/papers/chi26-magheart.jpg',
       },
@@ -70,7 +74,14 @@ export const publications = [
           'Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI \'26).',
         tags: ['aging', 'social', 'mental'],
         award: null,
-        links: [],
+        links: [
+          //https://dl.acm.org/doi/full/10.1145/3772318.3791224
+          {
+            label: 'Paper',
+            url: 'https://dl.acm.org/doi/full/10.1145/3772318.3791224',
+            icon: 'fas fa-link',
+          },
+        ],
         image: '/images/papers/chi26-aging.png',
       },
     ],
